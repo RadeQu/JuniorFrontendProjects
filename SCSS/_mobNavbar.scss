@@ -1,0 +1,110 @@
+@include mobile {
+	body {
+		.wrapper {
+			position: relative;
+			.navbar {
+				@include flex(end, end, column);
+				background-color: white;
+				overflow: hidden;
+				.hambMenuSec {
+					filter: none;
+					position: absolute;
+					background-color: $Almost_White;
+					@include flex(end, start, column);
+					width: 60%;
+					height: 100vh;
+					right: 0;
+					top: 0;
+					z-index: 1;
+					div,
+					h3 {
+						align-self: start;
+						margin-left: 5%;
+						margin-bottom: 10%;
+						margin-top: 10%;
+					}
+					button {
+						background-color: $Almost_White;
+						margin-left: 5%;
+						margin-top: 0;
+					}
+					transform: translateX(150%);
+					transition: all 0.4s;
+				}
+				.hiddenList,
+				.hiddenList2 {
+					@include hiddenMobile;
+				}
+				.hiddenList {
+					transform: translate(0, 20%);
+				}
+
+				.displayNone {
+					display: none;
+				}
+				.companyList {
+					transform: translatey(0);
+					button {
+						transform: translate(0, 35%);
+					}
+					img {
+						align-self: flex-end;
+						transform: translate(0, -200%);
+					}
+				}
+				.featuresList {
+					transform: translateY(0);
+					button {
+						transform: translate(0, 95%);
+					}
+					img {
+						align-self: flex-end;
+						transform: translate(0, -175%);
+					}
+				}
+				.closeBtn {
+					content: url(../images/icon-close-menu.svg);
+					position: absolute;
+					cursor: pointer;
+					top: -0%;
+					right: 10%;
+				}
+				.hambMenuSec_active {
+					transform: translateX(0);
+				}
+
+				.hambMenu {
+					position: absolute;
+					top: 3%;
+					right: 10%;
+					display: flex;
+				}
+				img {
+					margin: 5%;
+					align-self: start;
+				}
+				.logSec {
+					@include flex(center, center, column);
+					h3:first-child {
+						margin: 15% auto 0;
+					}
+					h3:last-child {
+						width: 90%;
+						margin: 15% auto;
+						padding: 0 6%;
+						text-align: center;
+					}
+				}
+			}
+		}
+		.hambMenuSec_active .content {
+			filter: brightness(50%);
+			padding-bottom: 100%;
+			transition: all 0.3s;
+		}
+		.hambMenuSec_active .navbar {
+			background-color: rgba(0, 0, 0, 0.5);
+			transition: all 0.3s;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+@mixin flex($align, $justify, $dir) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $dir;
+}
+@mixin hidden {
+	margin-top: 10%;
+	width: 150%;
+	border-radius: 10px;
+	padding: 10% 0;
+	box-shadow: 0px 0.6px 1.9px rgba(0, 0, 0, 0.081),
+		0px 1.3px 4.3px rgba(0, 0, 0, 0.1), 0px 2.4px 7.7px rgba(0, 0, 0, 0.107),
+		0px 4px 12.8px rgba(0, 0, 0, 0.107), 0px 6.6px 21.2px rgba(0, 0, 0, 0.102),
+		0px 11.6px 37px rgba(0, 0, 0, 0.09), 0px 25px 80px rgba(0, 0, 0, 0.07);
+		.elOfList:hover{
+			cursor: pointer;
+			background: rgba(128, 128, 128, 0.4);
+			color: $Almost_Black;
+			border-radius: 5px
+		}
+	span {
+		@include flex(center, start, row);
+		padding: 5% 0% 5% 25%;
+		position: relative;
+		transition: all 0.4s;
+		img {
+			position: absolute;
+			left: 10%;
+		}
+	}
+}
+@mixin hiddenMobile {
+	position: static;
+	box-shadow: none;
+	span {
+		@include flex(center, start, row);
+		padding: 5% 0% 5% 35%;
+		position: relative;
+		img {
+			position: absolute;
+			left: 5%;
+			top: 80%;
+		}
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 765px) {
+		@content;
+	}
+}

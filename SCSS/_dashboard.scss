@@ -1,0 +1,80 @@
+body {
+	min-height: 100vh;
+	min-width: 100vw;
+	position: relative;
+	overflow: hidden;
+	.wrapper {
+		width: 100%;
+		height: 100%;
+		@include flex(null, center, column);
+		.content {
+			height: 100%;
+			width: 100%;
+			@include flex(start, start, row);
+			.contentText {
+				margin-left: 10%;
+                margin-top: 4%;
+				height: 100%;
+				width: 60%;
+				@include flex(start, start, column);
+				position: relative;
+				h1 {
+					span {
+						display: block;
+					}
+					text-align: start;
+					width: 75%;
+					font-size: 5em;
+				}
+				p {
+					line-height: 1.4em;
+					margin-top: 5%;
+					width: 65%;
+				}
+				button {
+					margin-top: 5%;
+					line-height: 3em;
+					width: 20%;
+					background-color: $Almost_Black;
+					color: $Almost_White;
+					border-radius: 15px;
+					border: 1px solid $Almost_Black;
+					transition: all 0.3s;
+					font-weight: 700;
+				}
+				button:hover {
+					background-color: $Almost_White;
+					color: $Almost_Black;
+					border: 1px solid $Almost_Black;
+					cursor: pointer;
+				}
+				.logos {
+					width: 100%;
+					margin-top: 10%;
+					img {
+						margin: 0 2%;
+					}
+				}
+			}
+			.contentLogo {
+				height: 100%;
+				width: 45%;
+				margin-right: 5%;
+                transform: translateY(-10%);
+				img {
+					width: 80%;
+				}
+			}
+		}
+	}
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		a {
+			color: hsl(228, 45%, 44%);
+		}
+	}
+}

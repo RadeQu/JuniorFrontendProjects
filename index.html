@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./SCSS/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+  <main class="wrapper ">
+    <nav class="navbar ">
+
+      <img class="logo" src="./images/logo.svg" alt="">
+      <button class="hambMenu"><img src="./images/icon-menu.svg" alt=""></button>
+      <div class="hambMenuSec">
+        <div class="closeBtn"></div>
+        <div class="featuresList">
+          <button class="showBtn1">
+            <h3>Features</h3>
+            <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
+          </button>
+          <div class="hiddenList displayNone">
+            <span class="elOfList"><img src="./images/icon-todo.svg" alt="icon ToDoList"> Todo List</span>
+            <span class="elOfList"><img src="./images/icon-calendar.svg" alt="Icon Calendar"> Calendar</span>
+            <span class="elOfList"><img src="./images/icon-reminders.svg" alt="icon reminders"> Reminders</span>
+            <span class="elOfList"><img src="./images/icon-planning.svg" alt="icon Planning"> Planning</span>
+          </div>
+        </div>
+        <div class="companyList">
+          <button class="showBtn2">
+            <h3>Company</h3>
+            <img class="arrow2" src="./images/icon-arrow-down.svg" alt="">
+          </button>
+          <div class="hiddenList2 displayNone ">
+            <span class="elOfList">History</span>
+            <span class="elOfList">Our Team</span>
+            <span class="elOfList">Blog</span>
+          </div>
+        </div>
+        <h3>Careers</h3>
+        <h3>About</h3>
+        <section class="logSec">
+          <h3>Login</h3>
+          <h3>Register</h3>
+        </section>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="contentText ">
+        <h1><span>Make</span> remote work</h1>
+        <p> Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="logos"><img src="./images/client-databiz.svg" alt="logo databiz">
+          <img src="./images/client-audiophile.svg" alt="logo audiophile">
+          <img src="./images/client-meet.svg" alt="logo meet">
+          <img src="./images/client-maker.svg" alt="logo maker">
+        </div>
+      </div>
+      <div class="contentLogo"><img src="./images/image-hero-desktop.png" alt=""></div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/RadeQu">RadeQu</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

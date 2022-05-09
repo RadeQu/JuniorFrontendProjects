@@ -1,0 +1,664 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+}
+
+body p {
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+body .wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrapper .content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .wrapper .content .contentText {
+  margin-left: 10%;
+  margin-top: 4%;
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body .wrapper .content .contentText h1 {
+  text-align: start;
+  width: 75%;
+  font-size: 5em;
+}
+
+body .wrapper .content .contentText h1 span {
+  display: block;
+}
+
+body .wrapper .content .contentText p {
+  line-height: 1.4em;
+  margin-top: 5%;
+  width: 65%;
+}
+
+body .wrapper .content .contentText button {
+  margin-top: 5%;
+  line-height: 3em;
+  width: 20%;
+  background-color: #141414;
+  color: #fafafa;
+  border-radius: 15px;
+  border: 1px solid #141414;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+body .wrapper .content .contentText button:hover {
+  background-color: #fafafa;
+  color: #141414;
+  border: 1px solid #141414;
+  cursor: pointer;
+}
+
+body .wrapper .content .contentText .logos {
+  width: 100%;
+  margin-top: 10%;
+}
+
+body .wrapper .content .contentText .logos img {
+  margin: 0 2%;
+}
+
+body .wrapper .content .contentLogo {
+  height: 100%;
+  width: 45%;
+  margin-right: 5%;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+body .wrapper .content .contentLogo img {
+  width: 80%;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+
+body .wrapper .navbar {
+  color: dimgray;
+  padding: 0 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 10%;
+}
+
+body .wrapper .navbar .hambMenuSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-transform: translate(-5%, -20%);
+          transform: translate(-5%, -20%);
+}
+
+body .wrapper .navbar .hambMenu {
+  display: none;
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
+  padding: 0.3%;
+}
+
+body .wrapper .navbar img {
+  margin-right: 4%;
+  margin-bottom: 5%;
+}
+
+body .wrapper .navbar div,
+body .wrapper .navbar h3 {
+  padding: 0 1%;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .wrapper .navbar h3:hover {
+  cursor: pointer;
+  color: #141414;
+}
+
+body .wrapper .navbar .featuresList,
+body .wrapper .navbar .companyList {
+  -webkit-transform: translateY(41%);
+          transform: translateY(41%);
+  position: relative;
+}
+
+body .wrapper .navbar .featuresList button,
+body .wrapper .navbar .companyList button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  border: hidden;
+}
+
+body .wrapper .navbar .featuresList button h3,
+body .wrapper .navbar .companyList button h3 {
+  font-size: 1.55em;
+  font-weight: 500;
+  margin-right: 6%;
+  color: dimgray;
+}
+
+body .wrapper .navbar .featuresList button h3:hover,
+body .wrapper .navbar .companyList button h3:hover {
+  color: #141414;
+}
+
+body .wrapper .navbar .featuresList button:hover,
+body .wrapper .navbar .companyList button:hover {
+  cursor: pointer;
+}
+
+body .wrapper .navbar .featuresList {
+  -webkit-transform: translateY(43%);
+          transform: translateY(43%);
+}
+
+body .wrapper .navbar .hiddenList {
+  margin-top: 10%;
+  width: 150%;
+  border-radius: 10px;
+  padding: 10% 0;
+  -webkit-box-shadow: 0px 0.6px 1.9px rgba(0, 0, 0, 0.081), 0px 1.3px 4.3px rgba(0, 0, 0, 0.1), 0px 2.4px 7.7px rgba(0, 0, 0, 0.107), 0px 4px 12.8px rgba(0, 0, 0, 0.107), 0px 6.6px 21.2px rgba(0, 0, 0, 0.102), 0px 11.6px 37px rgba(0, 0, 0, 0.09), 0px 25px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0.6px 1.9px rgba(0, 0, 0, 0.081), 0px 1.3px 4.3px rgba(0, 0, 0, 0.1), 0px 2.4px 7.7px rgba(0, 0, 0, 0.107), 0px 4px 12.8px rgba(0, 0, 0, 0.107), 0px 6.6px 21.2px rgba(0, 0, 0, 0.102), 0px 11.6px 37px rgba(0, 0, 0, 0.09), 0px 25px 80px rgba(0, 0, 0, 0.07);
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+body .wrapper .navbar .hiddenList .elOfList:hover {
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.4);
+  color: #141414;
+  border-radius: 5px;
+}
+
+body .wrapper .navbar .hiddenList span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5% 0% 5% 25%;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .wrapper .navbar .hiddenList span img {
+  position: absolute;
+  left: 10%;
+}
+
+body .wrapper .navbar .hiddenList2 {
+  margin-top: 10%;
+  width: 150%;
+  border-radius: 10px;
+  padding: 10% 0;
+  -webkit-box-shadow: 0px 0.6px 1.9px rgba(0, 0, 0, 0.081), 0px 1.3px 4.3px rgba(0, 0, 0, 0.1), 0px 2.4px 7.7px rgba(0, 0, 0, 0.107), 0px 4px 12.8px rgba(0, 0, 0, 0.107), 0px 6.6px 21.2px rgba(0, 0, 0, 0.102), 0px 11.6px 37px rgba(0, 0, 0, 0.09), 0px 25px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0.6px 1.9px rgba(0, 0, 0, 0.081), 0px 1.3px 4.3px rgba(0, 0, 0, 0.1), 0px 2.4px 7.7px rgba(0, 0, 0, 0.107), 0px 4px 12.8px rgba(0, 0, 0, 0.107), 0px 6.6px 21.2px rgba(0, 0, 0, 0.102), 0px 11.6px 37px rgba(0, 0, 0, 0.09), 0px 25px 80px rgba(0, 0, 0, 0.07);
+  width: 120%;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+body .wrapper .navbar .hiddenList2 .elOfList:hover {
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.4);
+  color: #141414;
+  border-radius: 5px;
+}
+
+body .wrapper .navbar .hiddenList2 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5% 0% 5% 25%;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .wrapper .navbar .hiddenList2 span img {
+  position: absolute;
+  left: 10%;
+}
+
+body .wrapper .navbar .visibled {
+  opacity: 1;
+}
+
+body .wrapper .navbar .displayNone {
+  visibility: hidden;
+}
+
+body .wrapper .navbar .logSec {
+  width: 100%;
+  color: dimgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .wrapper .navbar .logSec h3:first-child {
+  padding-right: 3%;
+}
+
+body .wrapper .navbar .logSec h3:last-child {
+  padding: 0 3%;
+  border-radius: 15px;
+  border: 1px solid dimgray;
+  line-height: 2em;
+}
+
+body .wrapper .navbar .logSec h3:last-child:hover {
+  color: #141414;
+  border: 1px solid #141414;
+}
+
+@media screen and (max-width: 765px) {
+  body .wrapper {
+    overflow: hidden;
+  }
+  body .wrapper .content {
+    z-index: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: ()[4fr];
+        grid-template-rows: repeat(4fr);
+    background-color: white;
+    overflow: hidden;
+  }
+  body .wrapper .content .contentText {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding-top: 5%;
+  }
+  body .wrapper .content .contentText h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    width: 100%;
+  }
+  body .wrapper .content .contentText h1 span {
+    display: inline-block;
+  }
+  body .wrapper .content .contentText p {
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+  }
+  body .wrapper .content .contentText button {
+    width: 40%;
+    margin: 5% auto 0;
+  }
+  body .wrapper .content .contentText .logos {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 10%;
+  }
+  body .wrapper .content .contentText .logos img {
+    margin: 0 2.5%;
+    width: 20%;
+  }
+  body .wrapper .content .contentLogo {
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    width: 100%;
+    background: url(../images/image-hero-mobile.png) no-repeat;
+    background-size: contain;
+  }
+  body .wrapper .content .contentLogo img {
+    display: hidden;
+    visibility: hidden;
+    width: 58%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  body .wrapper {
+    position: relative;
+  }
+  body .wrapper .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+  }
+  body .wrapper .navbar .hambMenuSec {
+    -webkit-filter: none;
+            filter: none;
+    position: absolute;
+    background-color: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  body .wrapper .navbar .hambMenuSec div,
+  body .wrapper .navbar .hambMenuSec h3 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  body .wrapper .navbar .hambMenuSec button {
+    background-color: #fafafa;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+  body .wrapper .navbar .hiddenList,
+  body .wrapper .navbar .hiddenList2 {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body .wrapper .navbar .hiddenList span,
+  body .wrapper .navbar .hiddenList2 span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 5% 0% 5% 35%;
+    position: relative;
+  }
+  body .wrapper .navbar .hiddenList span img,
+  body .wrapper .navbar .hiddenList2 span img {
+    position: absolute;
+    left: 5%;
+    top: 80%;
+  }
+  body .wrapper .navbar .hiddenList {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+  body .wrapper .navbar .displayNone {
+    display: none;
+  }
+  body .wrapper .navbar .companyList {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+  body .wrapper .navbar .companyList button {
+    -webkit-transform: translate(0, 35%);
+            transform: translate(0, 35%);
+  }
+  body .wrapper .navbar .companyList img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-transform: translate(0, -200%);
+            transform: translate(0, -200%);
+  }
+  body .wrapper .navbar .featuresList {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  body .wrapper .navbar .featuresList button {
+    -webkit-transform: translate(0, 95%);
+            transform: translate(0, 95%);
+  }
+  body .wrapper .navbar .featuresList img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-transform: translate(0, -175%);
+            transform: translate(0, -175%);
+  }
+  body .wrapper .navbar .closeBtn {
+    content: url(../images/icon-close-menu.svg);
+    position: absolute;
+    cursor: pointer;
+    top: -0%;
+    right: 10%;
+  }
+  body .wrapper .navbar .hambMenuSec_active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  body .wrapper .navbar .hambMenu {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .wrapper .navbar img {
+    margin: 5%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  body .wrapper .navbar .logSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper .navbar .logSec h3:first-child {
+    margin: 15% auto 0;
+  }
+  body .wrapper .navbar .logSec h3:last-child {
+    width: 90%;
+    margin: 15% auto;
+    padding: 0 6%;
+    text-align: center;
+  }
+  body .hambMenuSec_active .content {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    padding-bottom: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  body .hambMenuSec_active .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+/*# sourceMappingURL=style.css.map */

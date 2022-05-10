@@ -11,10 +11,9 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -33,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/RadeQu/JuniorFrontendProjects/tree/IntroSectionProject
+- Live Site URL: https://radequ.github.io/JuniorFrontendProjects/
 
 ## My process
 
@@ -50,23 +49,14 @@ Users should be able to:
 
 I learned how to make a hamburger menu, and how to animation it a bit.
 
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - https://stackoverflow.com/questions/17774465/javascript-change-elements-src-in-specified-element - This helped me with changing element src with JS.
+
+- https://www.youtube.com/watch?v=QWn7kP-QoNw&t=9s - This helped me with understood how hamburger menu should work
 
 ## Author
 - GitHub - [@RadeQu]https://github.com/RadeQu
 - Frontend Mentor - [@RadeQu](https://www.frontendmentor.io/profile/RadeQu)
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

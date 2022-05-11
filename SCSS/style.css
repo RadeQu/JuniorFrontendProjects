@@ -195,14 +195,14 @@ body .wrapper .navbar img {
 }
 
 body .wrapper .navbar div,
-body .wrapper .navbar h3 {
+body .wrapper .navbar span, body .wrapper .navbar h3 {
   padding: 0 1%;
   font-weight: 500;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-body .wrapper .navbar h3:hover {
+body .wrapper .navbar span:hover {
   cursor: pointer;
   color: #141414;
 }
@@ -233,16 +233,16 @@ body .wrapper .navbar .companyList button {
   border: hidden;
 }
 
-body .wrapper .navbar .featuresList button h3,
-body .wrapper .navbar .companyList button h3 {
+body .wrapper .navbar .featuresList button span,
+body .wrapper .navbar .companyList button span {
   font-size: 1.55em;
   font-weight: 500;
   margin-right: 6%;
   color: dimgray;
 }
 
-body .wrapper .navbar .featuresList button h3:hover,
-body .wrapper .navbar .companyList button h3:hover {
+body .wrapper .navbar .featuresList button span:hover,
+body .wrapper .navbar .companyList button span:hover {
   color: #141414;
 }
 
@@ -521,7 +521,7 @@ body .wrapper .navbar .logSec h3:last-child:hover {
     transition: all 0.4s;
   }
   body .wrapper .navbar .hambMenuSec div,
-  body .wrapper .navbar .hambMenuSec h3 {
+  body .wrapper .navbar .hambMenuSec span, body .wrapper .navbar .hambMenuSec h3 {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;

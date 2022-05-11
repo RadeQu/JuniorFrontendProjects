@@ -22,12 +22,12 @@ body {
                 margin-bottom: 5%;
 			}
 			div,
-			h3 {
+			span, h3 {
 				padding: 0 1%;
 				font-weight: 500;
 				transition: all 0.3s;
 			}
-			h3:hover {
+			span:hover {
 				cursor: pointer;
 				color: $Almost_Black;
 			}
@@ -38,13 +38,13 @@ body {
 					@include flex(center, center, row);
 					background-color: white;
 					border: hidden;
-					h3 {
+					span {
 						font-size: 1.55em;
 						font-weight: 500;
 						margin-right: 6%;
 						color: $Medium_Gray;
 					}
-					h3:hover {
+					span:hover {
 						color: $Almost_Black;
 					}
 				}

@@ -39,7 +39,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) - This helped me for append API to my code
+- [Fetch Api res 1](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) - This helped me for append API to my code
+- [Fetch Api res 2](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON#populating_the_header ) - This helped me for append API to my code also
 
 ## Author
 

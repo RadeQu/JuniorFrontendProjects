@@ -1,0 +1,170 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #1f2632;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrapper .box {
+  background-color: #323a49;
+  width: 100%;
+  min-width: 500px;
+  min-height: 40vh;
+  padding: 7% 1% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+  -webkit-box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.025), 0px 6.7px 5.3px rgba(0, 0, 0, 0.036), 0px 12.5px 10px rgba(0, 0, 0, 0.045), 0px 22.3px 17.9px rgba(0, 0, 0, 0.054), 0px 41.8px 33.4px rgba(0, 0, 0, 0.065), 0px 100px 80px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.025), 0px 6.7px 5.3px rgba(0, 0, 0, 0.036), 0px 12.5px 10px rgba(0, 0, 0, 0.045), 0px 22.3px 17.9px rgba(0, 0, 0, 0.054), 0px 41.8px 33.4px rgba(0, 0, 0, 0.065), 0px 100px 80px rgba(0, 0, 0, 0.09);
+}
+
+body .wrapper .box .idBox {
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 0.8rem;
+}
+
+body .wrapper .box .adviceBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  color: #cee3e9;
+}
+
+body .wrapper .box .adviceBox h1 {
+  margin: 0 2%;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+body .wrapper .box .divider {
+  margin: 5% auto 0;
+  content: url(../images/pattern-divider-desktop.svg);
+}
+
+body .wrapper .box .changeAdvBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -7%;
+  cursor: pointer;
+  background-color: #52ffa8;
+  border: hidden;
+  border-radius: 50%;
+  padding: 2%;
+}
+
+body .wrapper .box .changeAdvBtn:hover {
+  -webkit-box-shadow: 0px 0px 35px 5px #51ffa8;
+          box-shadow: 0px 0px 35px 5px #51ffa8;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 13%;
+  left: 43%;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 765px) {
+  body .wrapper .box {
+    width: 95%;
+    min-width: 90vw;
+    min-height: 35vh;
+    padding: 7% 3% 10%;
+  }
+  body .wrapper .box .divider {
+    margin-top: 15% auto;
+    content: url(../images/pattern-divider-mobile.svg);
+  }
+  body .wrapper .box .changeAdvBtn {
+    bottom: -10%;
+    padding: 4%;
+  }
+  body .wrapper .box .idBox {
+    font-size: 0.7rem;
+    margin-bottom: 10%;
+  }
+  body .attribution {
+    width: 50%;
+    left: 25%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

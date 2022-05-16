@@ -1,0 +1,74 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background: $Dar_Blue;
+	@include flex(center, center, column);
+	position: relative;
+	.wrapper {
+		@include flex(center, center, column);
+		.box {
+			background-color: $Dark_Grayish_Blue;
+			width: 100%;
+			min-width: 500px;
+            min-height: 40vh;
+			padding: 7% 1% 10%;
+			@include flex(center, center, column);
+			border-radius: 15px;
+			position: relative;
+			box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.025),
+				0px 6.7px 5.3px rgba(0, 0, 0, 0.036),
+				0px 12.5px 10px rgba(0, 0, 0, 0.045),
+				0px 22.3px 17.9px rgba(0, 0, 0, 0.054),
+				0px 41.8px 33.4px rgba(0, 0, 0, 0.065),
+				0px 100px 80px rgba(0, 0, 0, 0.09);
+			.idBox {
+				color: $Neon_Green;
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				text-align: center;
+				margin-bottom: 5%;
+				font-size: 0.8rem;
+			}
+			.adviceBox {
+				@include flex(center, center, null);
+				font-size: 0.8rem;
+				color: $Light_Cyan;
+				h1 {
+					margin: 0 2%;
+					width: 100%;
+					max-width: 600px;
+					text-align: center;
+				}
+			}
+
+			.divider {
+				margin: 5% auto 0;
+				content: url(../images/pattern-divider-desktop.svg);
+			}
+			.changeAdvBtn {
+				@include flex(center, center, null);
+				position: absolute;
+				bottom: -7%;
+				cursor: pointer;
+				background-color: $Neon_Green;
+				border: hidden;
+				border-radius: 50%;
+				padding: 2%;
+			}
+			.changeAdvBtn:hover {
+				box-shadow: 0px 0px 35px 5px rgba(81, 255, 168, 1);
+			}
+		}
+	}
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+        width: 13%;
+        left: 43%;
+		a {
+			color: hsl(228, 45%, 44%);
+		}
+	}
+}

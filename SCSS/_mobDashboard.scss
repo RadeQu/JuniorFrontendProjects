@@ -1,0 +1,29 @@
+@include mobile {
+    body{
+        .wrapper{
+            .box{
+                width: 95%;
+                min-width: 90vw;
+                min-height: 35vh;
+                padding: 7% 3% 10% ;
+                .divider{
+                    margin-top: 15% auto;
+                    content: url(../images/pattern-divider-mobile.svg);
+                }
+                .changeAdvBtn{
+                    bottom: -10%;
+                    padding: 4%;
+                }
+                .idBox{
+                    font-size: 0.7rem;
+                    margin-bottom: 10%;
+                }
+              
+            }
+        }
+        .attribution{
+            width: 50%;
+            left: 25%;
+        }
+    }
+}

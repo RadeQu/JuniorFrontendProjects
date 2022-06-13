@@ -1,0 +1,232 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+  position: relative;
+}
+body .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 70%;
+}
+body .wrapper .balanceBox {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background-color: hsl(10deg, 79%, 65%);
+  width: 100%;
+  border-radius: 15px;
+  padding: 3%;
+  position: relative;
+  margin-bottom: 3%;
+}
+body .wrapper .balanceBox .myBalanceTitle {
+  font-size: 16px;
+  color: hsl(33deg, 100%, 98%);
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+body .wrapper .balanceBox .myMoney {
+  color: hsl(33deg, 100%, 98%);
+  font-weight: 700;
+  font-size: 24px;
+}
+body .wrapper .balanceBox img {
+  position: absolute;
+  align-self: flex-end;
+  justify-self: center;
+}
+body .wrapper .content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  background-color: hsl(33deg, 100%, 98%);
+  width: 100%;
+  border-radius: 15px;
+  padding: 4%;
+  height: 100%;
+  position: relative;
+}
+body .wrapper .content .title {
+  color: hsl(25deg, 47%, 15%);
+  margin-left: 2%;
+}
+body .wrapper .content .table {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  right: 0;
+  padding: 1%;
+}
+body .wrapper .content .table .bars {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  height: 32vh;
+  width: 100%;
+}
+body .wrapper .content .table .bars .bar {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 4% 0;
+  margin: 0 3.1%;
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 5px;
+  transition: all 0.3s;
+  position: relative;
+  opacity: 1;
+  cursor: pointer;
+}
+body .wrapper .content .table .bars .bar::after {
+  content: attr(data-content);
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  width: 120%;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  left: -10%;
+  top: -35px;
+}
+body .wrapper .content .table .days {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 100%;
+}
+body .wrapper .content .table .days span {
+  width: 100%;
+  margin: 0 4.2%;
+  color: hsl(28deg, 10%, 53%);
+}
+body .wrapper .content .lowerSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 92%;
+  margin-top: 5%;
+  padding: 5% 0;
+  border-top: 1px solid hsl(27deg, 66%, 92%);
+  position: absolute;
+  bottom: 0;
+}
+body .wrapper .content .lowerSection .leftSide {
+  margin-right: 30%;
+}
+body .wrapper .content .lowerSection .leftSide .titleUnder {
+  color: hsl(28deg, 10%, 53%);
+}
+body .wrapper .content .lowerSection .leftSide .priceMonth {
+  font-size: 32px;
+  color: hsl(25deg, 47%, 15%);
+}
+body .wrapper .content .lowerSection .right {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper .content .lowerSection .right span {
+  color: hsl(28deg, 10%, 53%);
+}
+body .wrapper .content .lowerSection .right .percentage {
+  font-weight: 700;
+  text-align: end;
+  color: hsl(25deg, 47%, 15%);
+}
+body .attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 765px) {
+  body {
+    overflow: hidden;
+  }
+  body .wrapper {
+    width: 80%;
+    height: 85%;
+    overflow: hidden;
+  }
+  body .wrapper .balanceBox {
+    padding: 5%;
+  }
+  body .wrapper .content {
+    height: 50%;
+  }
+  body .wrapper .content .title {
+    font-size: 22px;
+  }
+  body .wrapper .content .table {
+    padding: 1%;
+  }
+  body .wrapper .content .table .days {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+  }
+  body .wrapper .content .table .days span {
+    margin: 0 3.75%;
+  }
+  body .wrapper .content .lowerSection {
+    width: 100%;
+    margin-top: 10%;
+    padding: 5% 0% 5%;
+  }
+  body .wrapper .content .lowerSection .leftSide {
+    margin-right: 10%;
+  }
+  body .wrapper .content .lowerSection .leftSide .titleUnder {
+    font-size: 16px;
+  }
+  body .wrapper .content .lowerSection .right {
+    margin-right: 20%;
+  }
+  body .wrapper .content .lowerSection .right span {
+    font-size: 16px;
+    width: 150%;
+  }
+  body .wrapper .content .lowerSection .right .percentage {
+    font-size: 20px;
+    padding-right: 15%;
+  }
+  body .attribution {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

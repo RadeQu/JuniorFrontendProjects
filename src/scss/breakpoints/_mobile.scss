@@ -1,0 +1,56 @@
+@use "../abstracts/index" as *;
+
+@include mobile{
+    body{
+        overflow: hidden;
+        .wrapper{
+            width: 80%;
+            height: 85%;
+            overflow: hidden;
+            .balanceBox{
+                padding: 5%;
+            }
+            .content{
+                height: 50%;
+                .title{
+                    font-size: 22px;
+                }
+                .table{
+                    padding: 1%;
+                    .days{
+                        @include flex (center, flex-start, row);
+                        width: 60%;
+                        span{
+                           margin: 0 3.75%;
+                        }
+                    }
+                }
+                .lowerSection{
+                    width: 100%;
+                    margin-top: 10%;
+                    padding: 5% 0% 5%;
+                    .leftSide{
+                        margin-right: 10%;
+                        .titleUnder{
+                            font-size: 16px;
+                        }
+                    }
+                    .right{
+                        margin-right: 20%;
+                        span{
+                            font-size: 16px;
+                            width: 150%;
+                        }
+                        .percentage{
+                            font-size: 20px;
+                            padding-right: 15%;
+                        }
+                    }
+                }
+            }
+        }
+        .attribution {
+            display: none;
+        }
+    }
+}

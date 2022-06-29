@@ -1,0 +1,169 @@
+@use "../abstracts/index" as *;
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: $Very_dark_blue;
+	position: relative;
+	@include flex(center, center, null);
+	margin: auto;
+	.wrapper {
+		@include flex(center, center, null);
+		display: grid;
+        width: 90%;
+        height: 50%;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        row-gap: 60px;
+		.personCard {
+			display: grid;
+			grid-row: 1/3;
+			grid-column: 1/2;
+            background-color: $Dark_blue;
+            height: 100%;
+            border-radius: 15px;
+            span{
+                color: whitesmoke;
+                font-weight: 300;
+            }
+            h2{
+                font-size: 36px;
+                color: whitesmoke;
+                font-weight: 300;
+                span{
+                    display: block;
+                }
+            }
+            .buttonTop{
+                @include flex (start,center,column);
+                button{
+                    width: 30%;
+                    text-align: start;
+                    padding-left: 8%;
+                    height: 100%;
+                    background: transparent;
+                    color: $Desaturated_blue;
+                    outline: hidden;
+                    border: hidden;
+                    cursor: pointer;
+                    transition: color 0.3s;
+                }
+                button:hover{
+                    color: whitesmoke;
+                }
+                .active{
+                    color: whitesmoke;
+                }
+            }
+          
+            .topPersonBox{
+                @include flex (flex-start, flex-start, column);
+                background-color: $Blue;
+                transform: translate(0,-14%);
+                height: 115%;
+                border-radius: 15px;
+                padding: 8%;
+                img{
+                    width: 25%;
+                    border-radius: 50%;
+                    border: 2px solid $Pale_Blue;
+                    margin-bottom: 10%;
+                }
+            }
+		}
+		.workBox {
+			display: grid;
+			grid-row: 1/2;
+			grid-column: 2/3;
+			@include card;
+            .workBackground{
+            background-color: $Light_red_work;
+            @include backgroundCard;
+            }
+            
+		}
+        .workBox:hover{
+            background-color: rgb(47, 51, 119);
+        }
+		.playBox {
+			display: grid;
+			grid-row: 1/2;
+			grid-column: 3/4;
+            @include card;
+            .playBackground{
+                background-color: $Soft_blue_play;
+                @include backgroundCard;
+            }
+		}
+        .playBox:hover{
+            background-color: rgb(47, 51, 119);
+        }
+		.studyBox {
+			display: grid;
+			grid-row: 1/2;
+			grid-column: 4/5;
+            @include card;
+            .studyBackground{
+                background-color: $Light_red_study;
+                @include backgroundCard;
+            }
+		}
+        .studyBox:hover{
+            background-color: rgb(47, 51, 119);
+        }
+		.exerciseBox {
+			display: grid;
+			grid-row: 2/3;
+			grid-column: 2/3;
+            @include card;
+            .exerciseBackground{
+                background-color: $Lime_green_exercise;
+                @include backgroundCard;
+            }
+		}
+        .exerciseBox:hover{
+            background-color: rgb(47, 51, 119);
+        }
+		.socialBox {
+			display: grid;
+			grid-row: 2/3;
+			grid-column: 3/4;
+            @include card;
+            .socialBackground{
+                background-color: $Violet_social;
+                @include backgroundCard;
+            }
+		}
+        .socialBox:hover{
+            background-color: rgb(47, 51, 119);
+        }
+		.selfCareBox {
+			display: grid;
+			grid-row: 2/3;
+			grid-column: 4/5;
+            @include card;
+            .selfCareBackground{
+                background-color: $Soft_orange_self_care;
+                @include backgroundCard;
+            }
+		}
+		.selfCareBox:hover{
+            background-color: rgb(47, 51, 119);
+        } 
+
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+		width: 100%;
+		a {
+			color: hsl(228, 45%, 44%);
+		}
+	}
+}

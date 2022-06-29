@@ -1,0 +1,70 @@
+@use "./colors" as *;
+
+@mixin flex($align, $justify, $dir) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $dir;
+}
+
+@mixin card {
+	background-color: $Dark_blue;
+	color: whitesmoke;
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	border-radius: 15px;
+	position: relative;
+	transition: background-color 0.3s;
+	.buttons {
+		color: $Pale_Blue;
+		font-size: 26px;
+		justify-self: end;
+		transform: translateY(-100%);
+		cursor: pointer;
+		transition: color 0.3s;
+	}
+	.buttons:hover {
+		color: whitesmoke;
+	}
+	h2 {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.currentHours {
+		font-size: 30px;
+		transition: opacity 0.3s;
+	}
+	.previousHours {
+		color: $Pale_Blue;
+		font-size: 16px;
+		font-weight: 300;
+		transition: opacity 0.3s;
+	}
+}
+
+@mixin backgroundCard {
+	position: absolute;
+	width: 100%;
+	top: -25%;
+	z-index: -1;
+	overflow: hidden;
+	border-radius: 15px;
+	img {
+		transform: translate(260%, -15%);
+	}
+}
+
+@mixin mobile {
+    @media screen and (max-width:765px) {
+        @content
+    }
+};
+
+@mixin mobileHours {
+    .previousHours{
+        position: absolute;
+        transform: translate(130%, 500%);
+    }
+    
+}
